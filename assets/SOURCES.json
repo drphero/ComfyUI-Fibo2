@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "file": "tokenizer.json",
+      "source": "https://huggingface.co/briaai/Fibo-2.0-edit-turbo/blob/e976703bda26af652cb93c8856cd4fa21005567d/processor/tokenizer.json",
+      "license": "Apache-2.0",
+      "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+      "modified": false
+    },
+    {
+      "file": "Aileron-Regular.otf",
+      "source": "https://huggingface.co/briaai/Fibo-2.0-edit-turbo/blob/e976703bda26af652cb93c8856cd4fa21005567d/fonts/Aileron-Regular.otf",
+      "license": "CC0-1.0",
+      "sha256": "2762f4fc2ebad8323264aea52ffa2260b86c9677493d3ce2dc4f34e5851d2aa2",
+      "modified": false
+    },
+    {
+      "file": "DejaVuSans.ttf",
+      "source": "https://huggingface.co/briaai/Fibo-2.0-edit-turbo/blob/e976703bda26af652cb93c8856cd4fa21005567d/fonts/DejaVuSans.ttf",
+      "license": "Bitstream-Vera",
+      "sha256": "437a5ecec2ec177cba9284cbffc56055311347f3e9fe4f2b4b40323d0290a6db",
+      "modified": false
+    },
+    {
+      "file": "LICENSE-Aileron.txt",
+      "source": "https://huggingface.co/briaai/Fibo-2.0-edit-turbo/blob/e976703bda26af652cb93c8856cd4fa21005567d/fonts/LICENSE-Aileron.txt",
+      "license": "CC0-1.0",
+      "sha256": "d9f3c3a524f8f3d671de2bfb42a924e9ca8aa4afb66fbee04441ad6e7f623fd2",
+      "modified": false
+    },
+    {
+      "file": "LICENSE-DejaVu.txt",
+      "source": "https://huggingface.co/briaai/Fibo-2.0-edit-turbo/blob/e976703bda26af652cb93c8856cd4fa21005567d/fonts/LICENSE-DejaVu.txt",
+      "license": "Bitstream-Vera",
+      "sha256": "c67177807098edcacec9f10f724eb9f79d93fab5c9ad7422ca7e351a3376de97",
+      "modified": false
+    }
+  ],
+  "tokenizer_origin": {
+    "repository": "Qwen/Qwen3-VL-4B-Instruct",
+    "reference_revision": "ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "note": "The bundled file is the unchanged Bria processor export; Qwen is its upstream origin."
+  }
+}

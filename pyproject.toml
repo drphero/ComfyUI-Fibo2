@@ -1,0 +1,27 @@
+[project]
+name = "comfyui-fibo2"
+version = "0.3.1"
+description = "Native Bria Fibo 2.0 Edit Turbo image editing for ComfyUI, with masks, multiple reference images, and text rendering."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "torch",
+    "torchvision",
+    "numpy",
+    "Pillow>=10.1",
+    "tokenizers",
+    "safetensors",
+]
+
+[project.urls]
+# Planned repository; create it before publishing to the Registry.
+Repository = "https://github.com/drphero/ComfyUI-Fibo2"
+Documentation = "https://github.com/drphero/ComfyUI-Fibo2#readme"
+"Bug Tracker" = "https://github.com/drphero/ComfyUI-Fibo2/issues"
+
+[tool.comfy]
+PublisherId = "drphero"
+DisplayName = "Fibo 2.0 Edit Turbo"
+# Conservative support floor based on the tested version in README.md.
+requires-comfyui = ">=0.42.0"

@@ -1,0 +1,41 @@
+ComfyUI-Fibo2 0.3.1
+
+Integration code is GPL-3.0-or-later; see LICENSE. Third-party portions retain
+the following notices/licenses; see THIRD_PARTY.md. No model weights are
+included in this code package.
+
+Bria / Hugging Face reference implementation
+Copyright 2026 Bria AI and The HuggingFace Team. All rights reserved.
+Apache License 2.0; see licenses/Apache-2.0.txt.
+https://github.com/huggingface/diffusers/pull/14991
+Pinned commit: ab96e2b58c89adb9df418af74d81cc8b1e1be074
+
+model.py adapts transformer_bria_fibo2.py for ComfyUI operations, native
+attention, latent layout, model patching, conditioning and block prefetch.
+prompt.py extracts/adapts prompt methods from pipeline_bria_fibo2.py.
+text_images.py adapts the text-image helper for local logging and fonts
+read from in-memory assets. Modified 2026-10-20; see file headers and CHANGELOG.md.
+
+Qwen3-VL-4B-Instruct tokenizer
+Origin: Qwen Team / Alibaba Cloud; Apache-2.0.
+https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+Reference revision: ebb281ec70b05090aa6165b016eac8ec08e71b17
+assets/tokenizer.json is unchanged from Bria's processor export.
+See licenses/Apache-2.0.txt and assets/SOURCES.json.
+
+Comfy Org workflow template
+Copyright (c) 2023-present Comfy Org
+MIT License; see licenses/Comfy-Org-workflow-templates-MIT.txt.
+https://github.com/Comfy-Org/workflow_templates
+Template: templates/image_flux2_klein_image_edit_4b_distilled.json
+The example graphs adapt its sampling structure for Fibo loaders,
+conditioning, scheduler and standard FLUX.2 VAE. Modified 2026-10-20.
+
+Aileron Regular: Sora Sagano (dot colon), CC0-1.0.
+DejaVu Sans: Copyright (c) 2003 Bitstream, Inc. All Rights Reserved;
+DejaVu changes are public domain. Bitstream Vera font license.
+Font files are unchanged; supplied notices are in assets/LICENSE-Aileron.txt
+and assets/LICENSE-DejaVu.txt. Full CC0 text: licenses/CC0-1.0.txt.
+
+Unofficial community integration; no endorsement by upstream organizations
+is implied. Bria weights and external encoder/VAE retain their own licenses.
