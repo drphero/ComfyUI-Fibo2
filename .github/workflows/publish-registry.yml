@@ -1,0 +1,33 @@
+name: Publish to Comfy Registry
+
+# Publication is an explicit manual action; pushes do not publish a version.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: comfy-registry-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Check Registry credential
+        env:
+          REGISTRY_ACCESS_TOKEN: ${{ secrets.REGISTRY_ACCESS_TOKEN }}
+        run: |
+          if [ -z "$REGISTRY_ACCESS_TOKEN" ]; then
+            echo "::error::Add the drphero publisher API key as the REGISTRY_ACCESS_TOKEN repository secret."
+            exit 1
+          fi
+      - name: Publish custom node
+        uses: Comfy-Org/publish-node-action@d2366e7abb6ab16f3bb03e3520ae25c8cf749bc9
+        with:
+          skip_checkout: 'true'
+          personal_access_token: ${{ secrets.REGISTRY_ACCESS_TOKEN }}

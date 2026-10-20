@@ -15,10 +15,10 @@ dependencies = [
 ]
 
 [project.urls]
-# Planned repository; create it before publishing to the Registry.
 Repository = "https://github.com/drphero/ComfyUI-Fibo2"
 Documentation = "https://github.com/drphero/ComfyUI-Fibo2#readme"
 "Bug Tracker" = "https://github.com/drphero/ComfyUI-Fibo2/issues"
+Issues = "https://github.com/drphero/ComfyUI-Fibo2/issues"
 
 [tool.comfy]
 PublisherId = "drphero"

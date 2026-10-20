@@ -1,0 +1,9 @@
+# Development and release automation stay on GitHub, outside the installed pack.
+/.github/
+/tests/
+/RELEASING.md
+/.gitignore
+/.comfyignore
+
+# Keep assets/, licenses/, workflows/, convert.py, and the public documentation.
+# The fonts and tokenizer are required even when text rendering is not used.
